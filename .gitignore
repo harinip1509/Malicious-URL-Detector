@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# trained models are large; regenerate with src/train.py
+artifacts/*
+!artifacts/.gitkeep
+
+# datasets
+data/*
+!data/.gitkeep
+
+# generated outputs
+reports/*.png
+reports/*.csv
+!reports/.gitkeep
+
+node_modules/
+# frontend/dist is committed so the demo runs without Node
+.DS_Store
+.ipynb_checkpoints/
+
+# local caches and training logs
+.cache/
+catboost_info/

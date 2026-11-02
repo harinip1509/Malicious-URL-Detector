@@ -27,8 +27,6 @@
 10. [Hyperparameters & Training Specifications](#10-hyperparameters--training-specifications)
 11. [System Architecture & Repository Structure](#11-system-architecture--repository-structure)
 12. [Quick Start & Reproduction Guide](#12-quick-start--reproduction-guide)
-13. [How to Use This Repository for a 20-Page Report / Thesis](#13-how-to-use-this-repository-for-a-20-page-report--thesis)
-14. [BibTeX Citation](#14-bibtex-citation)
 
 ---
 
@@ -383,37 +381,6 @@ import pandas as pd
 df = pd.read_csv('reports/model_comparison.csv')
 print(df.to_string(index=False))
 "
-```
-
----
-
-## 13. How to Use This Repository for a 20-Page Report / Thesis
-
-If you or your team need to write a comprehensive **20-page project report or final year thesis**, use the following mapping directly from this repository:
-
-| Report Section | Suggested Page Budget | Primary Repository Source / Reference |
-| :--- | :---: | :--- |
-| **1. Abstract & Introduction** | 2 pages | Read [Section 1](#1-project-overview--key-contributions) & `reports/ieee_paper_draft.tex` (lines 18–38). Detail the rise of zero-hour phishing links and failure of reactive blocklists. |
-| **2. Literature Review** | 3 pages | Cite BERT/DistilBERT papers, gradient boosting survey, and URL classification baselines from `reports/ieee_paper_draft.tex` bibliography. |
-| **3. Dataset & Data Engineering** | 3 pages | Use [Section 8](#8-dataset-provenance--anti-leakage-cleaning-protocol). Detail the conflict-purging protocol, deduplication, and stratified 70/15/15 split. |
-| **4. Feature Engineering (Lexical & Host)** | 3 pages | Recreate the complete 34-feature table from [Section 6](#6-feature-engineering-34-lexical--host-attributes), including Shannon entropy and character distribution equations. |
-| **5. Proposed Hybrid Methodology** | 4 pages | Detail the 802-dimensional feature fusion from [Section 7](#7-hybrid-feature-fusion-architecture-802-dimensions), followed by the complete mathematical derivation of Confidence-Weighted Stacking from [Section 5](#5-mathematical-formulation-confidence-weighted-stacking). |
-| **6. Results & Discussion** | 3 pages | Incorporate the Full Comparative Table from [Section 2](#2-complete-experimental-results--benchmark-metrics), the 1,500-sample Confusion Matrix & diagnostic metrics from [Section 3](#3-held-out-test-set-breakdown--confusion-matrix), and model deep-dives from [Section 4](#4-model-by-model-deep-dive--comparative-analysis). |
-| **7. Adversarial Robustness & Limitations** | 1.5 pages | Use [Section 9](#9-adversarial-robustness--evasion-attacks) to explain the 5 evasion attacks (homoglyphs, percent encoding, padding, shorteners) and why pure lexical models fail. |
-| **8. Conclusion & Future Scope** | 0.5 pages | Summarize the +1.0% recall advantage of confidence weighting and outline future work (domain-disjoint evaluation, real-time DNS graph fusion). |
-
----
-
-## 14. BibTeX Citation
-
-```bibtex
-@inproceedings{panigrahi2026malicious,
-  title     = {Confidence-Weighted Hybrid Learning for Malicious URL Detection with DistilBERT and Boosting Ensembles},
-  author    = {Panigrahi, Harini and Bhayde, Prapti and Mahadik, Akhil},
-  booktitle = {Department of Information Technology Research Proceedings, Vidyalankar Institute of Technology},
-  year      = {2026},
-  url       = {https://github.com/harinip1509/Malicious-URL-Detector}
-}
 ```
 
 ---
